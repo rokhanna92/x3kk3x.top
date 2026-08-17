@@ -1,10 +1,10 @@
 {
   "name": "Precizne Cene",
-  "short_name": "Cene",
-  "description": "Solo ili kompanija. Jasne cene za web, SaaS i mobilne aplikacije.",
+  "short_name": "x3kk3x",
+  "description": "Software | Hadrware",
   "start_url": "/",
   "scope": "/",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait",
   "background_color": "#000000",
   "theme_color": "#000000",
