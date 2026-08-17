@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="sr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Digitalna Izrada & Razvoj</title>
+    <meta
+      name="description"
+      content="Solo razvoj ili kompletan tim. Web sajtovi, SaaS, mobilne aplikacije i SEO. Jasne cene. Čist kod."
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Cene" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                "Plus Jakarta Sans",
+                "-apple-system",
+                "BlinkMacSystemFont",
+                "sans-serif",
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: #000;
+        color: #fff;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+      }
+      .line {
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.08),
+          transparent
+        );
+      }
+      details summary {
+        list-style: none;
+        cursor: pointer;
+      }
+      details summary::-webkit-details-marker {
+        display: none;
+      }
+      details[open] summary .chevron {
+        transform: rotate(180deg);
+      }
+      .chevron {
+        transition: transform 0.25s ease;
+      }
+      details[open] .detail-body {
+        animation: slideDown 0.3s ease;
+      }
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen">
+    <main class="max-w-3xl mx-auto px-6 pt-24 pb-20">
+      <!-- Header -->
+      <header class="mb-20">
+        <h1
+          class="text-4xl text-center sm:text-5xl font-extrabold tracking-tight leading-none mb-6"
+        >
+          Precizne cene
+        </h1>
+        <p
+          class="text-lg text-center text-zinc-400 font-light leading-relaxed max-w-xl mx-auto"
+        >
+          Dve jasne opcije <br />
+          <br />
+          Solo saradnja Efikasnost <br />
+          ili kompletan razvoj kroz kompaniju.
+        </p>
+      </header>
+
+      <!-- Solo -->
+      <section class="mb-16">
+        <div class="flex items-baseline justify-between mb-2">
+          <h2 class="text-2xl font-bold tracking-tight">Solo</h2>
+          <span class="text-xs text-zinc-500 uppercase tracking-widest"
+            >Freestyle Developer</span
+          >
+        </div>
+        <p class="text-zinc-400 text-sm font-light mb-8 leading-relaxed">
+          Jedan developer iz tima! <br />
+          Brzo, fokusirano, bez menadžmenta. <br />
+          <br />
+          Vi komunicirate direktno sa osobom koja piše kod i donosi
+          arhitektonske odluke.
+        </p>
+
+        <div class="space-y-1">
+          <!-- Web sajtovi -->
+          <details class="group">
+            <summary class="flex justify-between items-center py-4 gap-4">
+              <span class="text-zinc-300 text-sm"
+                >Web sajtovi i landing strane</span
+              >
+              <div class="flex items-center gap-4">
+                <span class="text-white font-medium text-sm whitespace-nowrap"
+                  >od 400 €</span
+                >
+                <svg
+                  class="chevron w-4 h-4 text-zinc-600 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </summary>
+            <div
+              class="detail-body pb-5 text-sm text-zinc-400 leading-relaxed space-y-3 pl-0"
+            >
+              <p>
+                Potpuno responzivni sajtovi i landing stranice optimizovane za
+                konverziju. Jedan kod radi savršeno na telefonu, tabletu i
+                desktopu.
+              </p>
+              <ul class="space-y-2 text-zinc-500">
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Moderni stack
+                  (HTML/CSS/JS ili framework po potrebi)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> PWA podrška — može se
+                  instalirati na iOS i Android kao prava aplikacija
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Brzo učitavanje, Core Web
+                  Vitals u zelenoj zoni
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> SEO-ready struktura, meta
+                  tagovi, Open Graph
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Kontakt forme, analitika,
+                  osnovna integracija
+                </li>
+              </ul>
+            </div>
+          </details>
+          <div class="line"></div>
+
+          <!-- SaaS -->
+          <details class="group">
+            <summary class="flex justify-between items-center py-4 gap-4">
+              <span class="text-zinc-300 text-sm">SaaS i web aplikacije</span>
+              <div class="flex items-center gap-4">
+                <span class="text-white font-medium text-sm whitespace-nowrap"
+                  >od 1.500 €</span
+                >
+                <svg
+                  class="chevron w-4 h-4 text-zinc-600 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </summary>
+            <div
+              class="detail-body pb-5 text-sm text-zinc-400 leading-relaxed space-y-3"
+            >
+              <p>
+                Kompletne web aplikacije sa autentifikacijom, bazom podataka,
+                dashboardima i API-jem. Arhitektura prilagođena rastu.
+              </p>
+              <ul class="space-y-2 text-zinc-500">
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Auth sistem (email,
+                  OAuth, JWT ili session)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Relaciona ili NoSQL baza
+                  + čisti API endpointe
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Admin i korisnički paneli
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Role-based pristup,
+                  validacije, error handling
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Deployment, environment
+                  setup, osnovna dokumentacija
+                </li>
+              </ul>
+            </div>
+          </details>
+          <div class="line"></div>
+
+          <!-- PWA -->
+          <details class="group">
+            <summary class="flex justify-between items-center py-4 gap-4">
+              <span class="text-zinc-300 text-sm"
+                >Mobilne aplikacije (PWA)</span
+              >
+              <div class="flex items-center gap-4">
+                <span class="text-white font-medium text-sm whitespace-nowrap"
+                  >od 1.200 €</span
+                >
+                <svg
+                  class="chevron w-4 h-4 text-zinc-600 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </summary>
+            <div
+              class="detail-body pb-5 text-sm text-zinc-400 leading-relaxed space-y-3"
+            >
+              <p>
+                Progressive Web App koja se ponaša kao nativna aplikacija.
+                Instalira se na početni ekran iPhone-a i Androida bez App
+                Store-a.
+              </p>
+              <ul class="space-y-2 text-zinc-500">
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Service Worker + offline
+                  podrška
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Install prompt za iOS i
+                  Android
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> App-like navigacija i
+                  fullscreen doživljaj
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Push notifikacije (gde
+                  platforma dozvoljava)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Jedan kod — web + mobilni
+                  doživljaj
+                </li>
+              </ul>
+            </div>
+          </details>
+          <div class="line"></div>
+
+          <!-- SEO -->
+          <details class="group">
+            <summary class="flex justify-between items-center py-4 gap-4">
+              <span class="text-zinc-300 text-sm"
+                >Tehnički SEO i performanse</span
+              >
+              <div class="flex items-center gap-4">
+                <span class="text-white font-medium text-sm whitespace-nowrap"
+                  >od 250 €</span
+                >
+                <svg
+                  class="chevron w-4 h-4 text-zinc-600 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </summary>
+            <div
+              class="detail-body pb-5 text-sm text-zinc-400 leading-relaxed space-y-3"
+            >
+              <p>
+                Tehnička optimizacija koja direktno utiče na rangiranje i
+                brzinu. Bez marketinških floskula — samo merljivi rezultati.
+              </p>
+              <ul class="space-y-2 text-zinc-500">
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Core Web Vitals (LCP,
+                  INP, CLS) u zelenoj zoni
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Structured data
+                  (JSON-LD), sitemap, robots.txt
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Image optimizacija, lazy
+                  loading, critical CSS
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Canonical, hreflang, meta
+                  i Open Graph komplet
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Analiza i ispravka
+                  postojećih problema
+                </li>
+              </ul>
+            </div>
+          </details>
+          <div class="line"></div>
+
+          <!-- Održavanje -->
+          <details class="group">
+            <summary class="flex justify-between items-center py-4 gap-4">
+              <span class="text-zinc-300 text-sm">Mesečno održavanje</span>
+              <div class="flex items-center gap-4">
+                <span class="text-white font-medium text-sm whitespace-nowrap"
+                  >od 100 € / mesec</span
+                >
+                <svg
+                  class="chevron w-4 h-4 text-zinc-600 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </summary>
+            <div
+              class="detail-body pb-5 text-sm text-zinc-400 leading-relaxed space-y-3"
+            >
+              <p>
+                Kontinuirana briga o projektu da ostane brz, bezbedan i ažuran.
+              </p>
+              <ul class="space-y-2 text-zinc-500">
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Security update-i i
+                  dependency maintenance
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Backup i monitoring
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Manje izmene i bugfix-ovi
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Performance provera
+                  jednom mesečno
+                </li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <div class="line mb-16"></div>
+
+      <!-- Company -->
+      <section class="mb-20">
+        <div class="flex items-baseline justify-between mb-2">
+          <h2 class="text-2xl font-bold tracking-tight">Kompanija</h2>
+          <span class="text-xs text-zinc-500 uppercase tracking-widest"
+            >Kroz moj tim</span
+          >
+        </div>
+        <p class="text-zinc-400 text-sm font-light mb-8 leading-relaxed">
+          Projekat vodi kompanija. <br />
+          Posvećen project manager, dizajn, backend, frontend i marketing
+          podrška. <br />
+          <br />
+          Veći obim, više resursa, potpuna struktura.
+        </p>
+
+        <div class="space-y-1">
+          <!-- Korporativni sajtovi -->
+          <details class="group">
+            <summary class="flex justify-between items-center py-4 gap-4">
+              <span class="text-zinc-300 text-sm"
+                >Korporativni sajtovi i vizuelni identitet</span
+              >
+              <div class="flex items-center gap-4">
+                <span class="text-white font-medium text-sm whitespace-nowrap"
+                  >od 1.500 €</span
+                >
+                <svg
+                  class="chevron w-4 h-4 text-zinc-600 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </summary>
+            <div
+              class="detail-body pb-5 text-sm text-zinc-400 leading-relaxed space-y-3"
+            >
+              <p>
+                Kompletan digitalni identitet i korporativni sajt. Od strategije
+                i dizajn sistema do produkcijskog koda i predaje.
+              </p>
+              <ul class="space-y-2 text-zinc-500">
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> UI/UX istraživanje,
+                  wireframe-ovi, high-fidelity dizajn
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Dizajn sistem
+                  (komponente, tipografija, spacing, boje)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Višejezičnost,
+                  pristupačnost (a11y), responsivnost
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> CMS integracija (Headless
+                  ili klasični) po potrebi
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Brand guidelines +
+                  predaja svih asset-a
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Project manager + redovni
+                  status update-i
+                </li>
+              </ul>
+            </div>
+          </details>
+          <div class="line"></div>
+
+          <!-- Enterprise SaaS -->
+          <details class="group">
+            <summary class="flex justify-between items-center py-4 gap-4">
+              <span class="text-zinc-300 text-sm"
+                >Enterprise SaaS i sistem arhitektura</span
+              >
+              <div class="flex items-center gap-4">
+                <span class="text-white font-medium text-sm whitespace-nowrap"
+                  >od 5.000 €</span
+                >
+                <svg
+                  class="chevron w-4 h-4 text-zinc-600 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </summary>
+            <div
+              class="detail-body pb-5 text-sm text-zinc-400 leading-relaxed space-y-3"
+            >
+              <p>
+                Skabilne SaaS platforme i kompleksni sistemi. Od arhitekture i
+                mikroservisa do multi-tenant rešenja i enterprise integracija.
+              </p>
+              <ul class="space-y-2 text-zinc-500">
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> System design, domain
+                  modeling, API-first pristup
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Multi-tenant arhitektura,
+                  RBAC, audit logovi
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Backend (Node, Go, ili
+                  drugi) + frontend (React/Next ili slično)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Queue-ovi, background
+                  job-ovi, real-time (WebSocket)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> CI/CD, staging/production
+                  okruženja, monitoring
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Dokumentacija,
+                  onboarding, handover sa timom
+                </li>
+              </ul>
+            </div>
+          </details>
+          <div class="line"></div>
+
+          <!-- Native apps -->
+          <details class="group">
+            <summary class="flex justify-between items-center py-4 gap-4">
+              <span class="text-zinc-300 text-sm"
+                >Nativne aplikacije (iOS / Android)</span
+              >
+              <div class="flex items-center gap-4">
+                <span class="text-white font-medium text-sm whitespace-nowrap"
+                  >od 4.000 €</span
+                >
+                <svg
+                  class="chevron w-4 h-4 text-zinc-600 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </summary>
+            <div
+              class="detail-body pb-5 text-sm text-zinc-400 leading-relaxed space-y-3"
+            >
+              <p>
+                Prave nativne ili cross-platform aplikacije za App Store i
+                Google Play. Potpun lifecycle od dizajna do objave.
+              </p>
+              <ul class="space-y-2 text-zinc-500">
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> React Native / Flutter
+                  ili čisti Swift / Kotlin
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> UI prilagođen Human
+                  Interface Guidelines i Material Design
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Push notifikacije, deep
+                  linking, offline-first logika
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Integracija sa backend
+                  API-jem, analytics, crash reporting
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> App Store / Play Store
+                  submission i review podrška
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> TestFlight / internal
+                  testing + QA proces
+                </li>
+              </ul>
+            </div>
+          </details>
+          <div class="line"></div>
+
+          <!-- Digital strategy -->
+          <details class="group">
+            <summary class="flex justify-between items-center py-4 gap-4">
+              <span class="text-zinc-300 text-sm"
+                >Digitalna strategija i SEO kampanje</span
+              >
+              <div class="flex items-center gap-4">
+                <span class="text-white font-medium text-sm whitespace-nowrap"
+                  >od 800 € / mesec</span
+                >
+                <svg
+                  class="chevron w-4 h-4 text-zinc-600 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </summary>
+            <div
+              class="detail-body pb-5 text-sm text-zinc-400 leading-relaxed space-y-3"
+            >
+              <p>
+                Kontinuirana digitalna strategija i SEO koji donose organski
+                saobraćaj i kvalifikovane leadove. Mesečni izveštaji i jasni
+                KPI-jevi.
+              </p>
+              <ul class="space-y-2 text-zinc-500">
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Keyword research, content
+                  plan, on-page i technical SEO
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Link building strategija
+                  i digital PR
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Analitika (GA4, Search
+                  Console), conversion tracking
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Mesečni izveštaji +
+                  preporuke za sledeći ciklus
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Koordinacija sa
+                  sadržajskim i development timom
+                </li>
+              </ul>
+            </div>
+          </details>
+          <div class="line"></div>
+
+          <!-- SLA -->
+          <details class="group">
+            <summary class="flex justify-between items-center py-4 gap-4">
+              <span class="text-zinc-300 text-sm">SLA podrška 24/7</span>
+              <div class="flex items-center gap-4">
+                <span class="text-white font-medium text-sm whitespace-nowrap"
+                  >od 400 € / mesec</span
+                >
+                <svg
+                  class="chevron w-4 h-4 text-zinc-600 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </summary>
+            <div
+              class="detail-body pb-5 text-sm text-zinc-400 leading-relaxed space-y-3"
+            >
+              <p>
+                Ugovoreni nivoi dostupnosti i reagovanja. Kritični sistemi
+                ostaju online, a incidenti se rešavaju po definisanom SLA-u.
+              </p>
+              <ul class="space-y-2 text-zinc-500">
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Definisan response time i
+                  resolution time
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> 24/7 monitoring +
+                  alerting
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Incident management i
+                  post-mortem izveštaji
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Priority queue za
+                  kritične bugove
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-zinc-600">→</span> Mesečni uptime i
+                  performance izveštaj
+                </li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Simple note -->
+      <p class="text-xs text-center text-zinc-600 leading-relaxed max-w-md mx-auto">
+        Cene su polazne. <br />
+        Tačna ponuda zavisi od obima i kompleksnosti. <br />
+        Sve što se isporuči je vaše vlasništvo.
+      </p>
+    </main>
+
+    <footer class="max-w-3xl mx-auto px-6 py-8 border-t border-white/5">
+      <p class="text-xs text-center text-zinc-600">© 2026</p>
+    </footer>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .catch((err) => console.error("SW registration failed:", err));
+        });
+      }
+    </script>
+  </body>
+</html>
