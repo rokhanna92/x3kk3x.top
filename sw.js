@@ -1,4 +1,4 @@
-const CACHE_NAME = "x3kk3x-pwa-v2";
+const CACHE_NAME = "x3kk3x-pwa-v2.1";
 const urlsToCache = ["/", "/index.html", "/manifest.json", "/icon.png"];
 
 self.addEventListener("install", (event) => {
