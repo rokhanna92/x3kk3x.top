@@ -1,5 +1,12 @@
-const CACHE_NAME = "x3kk3x-pwa-v2.3";
-const urlsToCache = ["/", "/index.html", "/manifest.json", "/icon.png"];
+const CACHE_NAME = "x3kk3x-pwa-v3.0";
+const urlsToCache = [
+  "/",
+  "/index.html",
+  "/manifest.json",
+  "/icon-192.png",
+  "/icon-512.png",
+  "/apple-touch-icon.png",
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
